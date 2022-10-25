@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
         res.end();
     }
 })
-
-server.listen(5000 || process.env.PORT, () => {
+const PORT = 5000 || process.env.PORT
+server.listen(PORT, () => {
     console.log("listening on 5000");
 })
