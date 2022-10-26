@@ -10,19 +10,11 @@ const server = http.createServer((req, res) => {
             "Content-type": "text/css",
             "access-control-allow-origin": "*"
         }
-        let file = fs.readFileSync("./style.css", 'utf8');
+        let file = fs.readFileSync("./style/mystyle.css", 'utf8');
         if (!file) {
             res.writeHead(404, { "Content-type": "application/json" })
             res.write("File not found");
             return;
-        }
-        if(file !== fs.readFileSync("./style/mystyle.css", "utf8")){
-            const paste_to_server = fs.writeFileSync("./style/mystyle.css", file, (err)=>{
-                if(err){
-                    console.log(err)
-                }
-            });
-            file = fs.readFileSync("./style/mystyle.css", "utf8");
         }
         res.writeHead(200, header);
         res.write(file);

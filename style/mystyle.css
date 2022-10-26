@@ -1,9 +1,324 @@
-h1{
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Font size */
+.h1{
+    font-size: 30px;
+}
+.h2{
+    font-size: 28px;
+}
+.h3{
+    font-size: 26px;
+}
+.h4{
+    font-size: 24px;
+}
+.h5{
+    font-size: 22px;
+}
+.h6{
+    font-size: 20px;
 }
 .p1{
-    padding: 5px;
-    font-size: 15px;
+    font-size: 18px;
+}
+.p2{
+    font-size: 16px;
+}
+.p3{
+    font-size: 14px;
+}
+.p4{
+    font-size: 12px;
+}
+/* Font weight */
+.fw-1{
+    font-weight: 400;
+}
+.fw-2{
+    font-weight: 600;
+}
+.fw-3{
+    font-weight: 800;
+}
+.fw-bolder{
+    font-weight: bolder;
+}
+/* Colors */
+.c1{
+    color: white;
+}
+.c2{
+    color: red;
+}
+.c3{
+    color: blue;
+}
+.c4{
     color: green;
-    text-shadow: 3px 3px 12px black;
+}
+.c5{
+    color: yellow;
+}
+.c5{
+    color: black;
+}
+
+
+/* Backgrounds-color */
+.bg1{
+    background-color: white;
+}
+.bg2{
+    background-color: red;
+}
+.bg3{
+    background-color: blue;
+}
+.bg4{
+    background-color: green;
+}
+.bg5{
+    background-color: yellow;
+}
+.bg6{
+    background-color: black;
+}
+.smooth-bg1{
+    background-color: #F7BF81;
+}
+.smooth-bg2{
+    background-color: #FBD3D3;
+}
+.smooth-bg3{
+    background-color: #D5EB;
+}
+.smooth-bg4{
+    background-color: #D5EBDA;
+}
+.smooth-bg5{
+    background-color: #F4DACD;
+}
+.smooth-bg6{
+    background-color: #E5CCCA;
+}
+
+/* Padding */
+.p-all5{
+    padding: 5px;
+}
+.p-r5{
+    padding-right: 5px;
+}
+.p-l5{
+    padding-left: 5px;
+}
+.p-t5{
+    padding-top: 5px;
+}
+.p-b5{
+    padding-bottom: 5px;
+}
+
+.p-all10{
+    padding: 10px;
+}
+.p-r10{
+    padding-right: 10px;
+}
+.p-l10{
+    padding-left: 10px;
+}
+.p-t10{
+    padding-top: 10px;
+}
+.p-b10{
+    padding-bottom: 10px;
+}
+
+/* Border */
+.bd-none{
+    border: none;
+}
+.bd-2px-black{
+    border: 2px solid rgb(255, 255, 255);
+}
+.bd-2px-red{
+    border: 2px solid red;
+}
+.bd-2px-blue{
+    border: 2px solid blue;
+}
+.bd-2px-green{
+    border: 2px solid green;
+}
+.bd-2px-yellow{
+    border: 2px solid yellow;
+}
+.bd-2px-black{
+    border: 2px solid black;
+}
+.bd-2px-smooth1{
+    border: 2px solid #F7BF81;
+}
+.bd-2px-smooth2{
+    border: 2px solid #FBD3D3;
+}
+.bd-2px-smooth3{
+    border: 2px solid #D5EB;
+}
+.bd-2px-smooth4{
+    border: 2px solid #D5EBDA;
+}
+.bd-2px-smooth5{
+    border: 2px solid #F4DACD;
+}
+.bd-2px-smooth6{
+    border: 2px solid #E5CCCA;
+}
+/* Border radius */
+.br-5{
+    border-radius: 5px;
+}
+.br-10{
+    border-radius: 10px;
+}
+.br-12{
+    border-radius: 12px;
+}
+.br-50{
+    border-radius: 50%;
+}
+/* margin */
+.m-all5{
+    margin: 5px;
+}
+.m-r5{
+    margin-right: 5px;
+}
+.m-l5{
+    margin-left: 5px;
+}
+.m-t5{
+    margin-top: 5px;
+}
+.m-b5{
+    margin-bottom: 5px;
+}
+.m-all10{
+    margin: 10px;
+}
+.m-r10{
+    margin-right: 10px;
+}
+.m-l10{
+    margin-left: 10px;
+}
+.m-t10{
+    margin-top: 10px;
+}
+.m-b10{
+    margin-bottom: 10px;
+}
+/* flex */
+.cloumn-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cloumn-reverse-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.row-space-around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.row-space-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row-space-evenly{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* widths */
+.width-10{
+    width: 10%;
+}
+.width-25{
+    width: 25%;
+}
+.width-50{
+    width: 50%;
+}
+.width-75{
+    width: 75%;
+}
+.width-100{
+    width: 100%;
+}
+/* heights */
+.height-fit-content{
+    height: fit-content;
+}
+.height-10rem{
+    height: 10rem;
+}
+.height-20rem{
+    height: 20rem;
+}
+.height-30rem{
+    height: 30rem;
+}
+/* Box-shadow */
+.box-shadow1{
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, .5);
+}
+/* buttons */
+.btn-1{
+    background-color: rgb(62, 62, 255);
+    text-align: center;
+    padding: 5px;
+    color: rgb(223, 223, 223);
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn-2{
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn-1:hover{
+    background-color: rgb(27, 27, 255);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
 }
